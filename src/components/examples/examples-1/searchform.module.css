@@ -1,0 +1,213 @@
+.searchformContainer {
+  width: 100%;
+}
+
+.buttonContainer button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+  transition: 150ms ease-in-out;
+}
+
+.buttonContainer button:hover {
+  background-color: maroon;
+}
+
+.buttonContainer .isOn {
+  background-color: maroon;
+}
+
+.searchform {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  overflow: hidden;
+  font-family: var(--font-montserrat);
+
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .2);
+}
+
+.title {
+  background-color: maroon;
+  padding: 10px;
+  color: white;
+  font-family: var(--font-montserrat);
+  font-weight: 300;
+}
+
+/* TOP SIDE */
+
+.topside {
+  padding: 10px;
+  display: flex;
+}
+
+.topside select {
+  font-size: 13px;
+}
+
+.tplt {
+  display: flex;
+  width: 50%;
+}
+
+.tprt {
+  margin-left: 10px;
+  display: flex;
+  width: 50%;
+}
+
+.tprt select{
+  width: 50%;
+}
+
+.tprt input {
+  width: 50%;
+  border: 1px solid rgb(203, 203, 203);
+  font-size: 13px;
+}
+
+.opt {
+  color: gray;
+}
+
+.brand {
+  cursor: pointer;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.model {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* BOT SIDE */
+
+.botside {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.inputContainer {
+  width: 50%;
+}
+
+.inputText {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.searchTextContainer {
+  width: 210px;
+}
+
+.searchText {
+  font-size: 13px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.submitContainer {
+  width: 50%;
+  display: flex;
+  padding: 0 10px;
+}
+
+.submit {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  width: 300px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0px maroon;
+
+  transition: 150ms ease-in-out;
+}
+
+.submit:hover {
+  transform: translateY(3%);
+}
+
+/* Botside Ends */
+
+.adv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.QS {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background-color: rgb(238, 238, 238);
+  color: black;
+}
+
+.titleQS {
+  padding: 10px;
+  font-size: 13px;
+  color: rgb(107, 107, 107);
+}
+
+.buttonQS {
+  padding: 10px;
+  display: flex;
+}
+
+.buttonImage,
+.buttonImages {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.buttonImage {
+  filter: invert(100%);
+}
+
+.buttonQS button{
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-right: 10px;
+  border-radius: 25px;
+  color: white;
+  font-family: var(--font-montserrat);
+  border: none;
+
+  transition: 150ms ease-in-out;
+}
+
+.buttonQS button:hover {
+  transform: translateY(3%);
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, .25);
+}
+
+.buttonQS button:nth-child(1) {
+  background-color: #fe9604;
+}
+.buttonQS button:nth-child(2) {
+  background-color: #ff5151;
+}
+.buttonQS button:nth-child(3) {
+  background-color: #384250;
+}
+.buttonQS button:nth-child(4) {
+  background-color: #0162dd;
+}
