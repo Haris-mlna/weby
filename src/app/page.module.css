@@ -32,7 +32,6 @@
 
 /* BUTTON ENDS */
 
-
 /*=======================
 Header
 =========================*/
@@ -65,8 +64,7 @@ Header
   text-align: center;
 }
 
-
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .header h1 {
     font-size: 128px;
   }
@@ -83,7 +81,6 @@ Header Ends
 /*=======================
 Main
 =========================*/
-
 
 .slogan {
   width: 100%;
@@ -110,32 +107,146 @@ Main
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding-top: 10px;
   background: linear-gradient(to right, #f857a6, #ff5858);
+  overflow: hidden;
 }
 
-.introduction {
-  width: 95%;
-  height: 700px;
-  background-color: white;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+.cardContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
 }
 
-.introduction h6 {
+.card {
   width: 100%;
-  padding: 10px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 300ms ease-in-out;
+}
+
+.card:nth-child(even) .cardImageContainer {
+  order: 2; /* Change the order value to 2 for odd cards */
+}
+
+.card:nth-child(even) .cardTextContainer {
+  order: 1; /* Change the order value to 1 for odd cards */
+}
+
+.cardImageContainer {
+  width: 40%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+}
+
+.cardImageContainer h2 {
+  color: white;
+  font-family: var(--font-dancingS);
+  font-size: 64px;
+  cursor: pointer;
+}
+
+.cardTextContainer {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: white;
+  transition: 300ms ease-in-out;
+
+  cursor: pointer;
+}
+
+.cardTextContainer h3 {
+  display: flex;
+  justify-content: center;
   font-family: var(--font-outfit);
-  color: gray;
   font-weight: 300;
 }
 
+.cardTextContainer p {
+  width: 70%;
+  text-align: center;
+  transition: opacity 300ms ease-in-out; /* Add transition for opacity */
+}
+
 /* INTRODUCTION SECTION ENDS */
+
+/* SECTION-1 */
+
+.project {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.webyImageContainer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layer {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.layer h2 {
+  color: white;
+  font-family: var(--font-dancingS);
+  font-size: 256px;
+  margin: 0;
+
+  background: linear-gradient(to right, #f857a6, #ff5858);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.layer p {
+  color: white;
+  font-family: var(--font-outfit);
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.webyImageContainer img {
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+}
+
+@media (max-width: 1000px) {
+  .layer h2 {
+    font-size: 128px;
+  }
+}
+
+/* SECTION-1 ENDS */
 
 /*=======================
 Main End
